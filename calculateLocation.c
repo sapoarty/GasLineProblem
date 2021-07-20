@@ -48,7 +48,7 @@ int get_value_at_pos(int *arr, int left, int right, int pos)
 
 // Function calculates closest location of gas tube
 // This location it's the median value of arr[]
-int calculateLocation(int *arr, int size)
+float calculateLocation(int *arr, int size)
 {
     int median_pos;
 
