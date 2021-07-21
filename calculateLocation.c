@@ -1,3 +1,5 @@
+#include <stdio.h>
+
 void swap(int* a, int* b) {
     int temp = *a;
     *a = *b;
@@ -52,6 +54,8 @@ float calculateLocation(int *arr, int size)
 {
     int median_pos;
 
+    if (size == 2)
+        return  ((float)(arr[0] + arr[1]) / 2);
     if (size % 2 == 0)
         median_pos = size / 2;
     else
